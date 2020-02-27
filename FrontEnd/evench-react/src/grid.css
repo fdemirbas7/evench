@@ -1,0 +1,74 @@
+.gridLayout{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr );
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+     "card1 . . . card4"
+     "card2 . evench-logo . card5" 
+     "card3 . . . card6" ;
+    background: #fffc00; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fffc00, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fffc00, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+#card1 {
+    grid-area: card1;
+}
+
+#card2 {
+    grid-area: card2;
+}
+    
+#card3 {
+    grid-area: card3;
+}
+
+#card4 {
+    grid-area: card4;
+}
+    
+#card5 {
+    grid-area: card5;
+}
+        
+#card6 {
+    grid-area: card6;
+}
+
+#evench-logo {
+    grid-area: evench-logo;
+    display: grid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    border: 2px solid red;
+    
+}
+
+#evench-logo img {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    display: block;
+}
+
+#card1, #card2, #card3{
+    display: grid;
+    justify-items: left;
+    justify-content: left;
+    padding: 10px 0 15px 25px;
+
+}
+
+#card4, #card5, #card6{
+    display: grid;
+    justify-items: right;
+    justify-content: right;
+    padding: 10px 25px 15px 0;
+
+}
