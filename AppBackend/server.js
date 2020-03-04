@@ -13,9 +13,6 @@ app.use(express.static('../FrontEnd/public'));
 
 
 
-
-
-
 app.get('/', (req, res) => {
     res.render()
 });

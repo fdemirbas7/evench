@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
-import EventCard from './Card';
+
+import CardList from './CardList'
 
 function App() {
-  return (<EventCard/>);
+  return (<CardList/>);
   
 }
 
